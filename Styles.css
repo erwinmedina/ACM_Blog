@@ -1,0 +1,25 @@
+.header {
+    background-color: aliceblue;
+}
+
+p, h2{
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.section {
+    display: inline-block;
+}
+
+.article {
+    display: inline-block;
+}
