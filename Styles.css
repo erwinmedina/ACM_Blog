@@ -1,3 +1,7 @@
+body {
+    font-family: "Sriracha";
+}
+
 .header {
     background-color: aliceblue;
 }
@@ -24,4 +28,58 @@ ul {
 
 .article {
     display: inline-block;
+}
+.blogCard {
+    font-family: 'Sriracha', cursive;
+    width: 60%;
+    margin: 5px auto;
+    border: solid 2px rgba(0,0,0,.25);
+    border-radius: 22px;
+    max-height: 300px;
+}
+.blogCard_Top {
+    border-radius: 20px 20px 0 0;
+    background: lightgray;
+}
+.blogCard_Top_Content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogCard_Top {
+    display: flex;
+}
+.blogCard_Top img {
+    border-radius: 50%;
+    margin: 10px;
+}
+.username {
+    text-align: left;
+    margin: 0;
+}
+.timestamp {
+    color: rgba(0,0,0,.5);
+    font-style: italic;
+    font-size: 10px;
+    text-align: left;
+}
+.blogCard_Bottom p {
+    margin: 10px;
+    max-height: 100px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.blogCard_Bottom_Buttons {
+    padding: 10px;
+}
+.blogCard_Bottom_Buttons div {
+    width: 70px;
+}
+
+.userImage {
+    height: 50px;
+    width: 50px;
+    margin: auto;
 }
