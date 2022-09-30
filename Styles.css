@@ -1,11 +1,20 @@
 body {
     font-family: "Sriracha";
 }
+.menu {
+    margin: 0 auto;
+    width: 60%  
+}
+main {
+    border: solid 3px rgba(0,0,0,.25);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 30px;
+}
 
 .header {
     background-color: aliceblue;
 }
-
 p, h2{
     text-align: center;
     display: inline-block;
