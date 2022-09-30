@@ -83,13 +83,19 @@ ul {
     width: 50px;
     margin: auto;
 }
-
 .footer p {
     background-color: gainsboro;
     position: fixed;
     text-align: center;
+    margin: 0 auto;
+    width: 100vw;
 }
 
 p_footer {
+    margin: 0 auto;
     text-align: center;
+}
+
+.footer {
+    margin: 0 auto;
 }
