@@ -15,7 +15,8 @@ main {
 .header {
     background-color: aliceblue;
 }
-p, h2{
+
+p, h2 {
     text-align: center;
     display: inline-block;
 }
