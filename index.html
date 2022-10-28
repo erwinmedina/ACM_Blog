@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <header class="header">
         <div id="top-header">
             <article class="objects">
@@ -35,23 +36,27 @@
         <div class="menu">
             <h1>Welcome to the Blog</h1>
             <main>
-                <h2>Adding A New Blog</h2>
-                <div class="form-group">
-                    <div class="form-row mb-2">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="blog_title">
-                        </div>
-                    </div>
-                    <div class="form-row mb-2">
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="username">
-                        </div>
-                    </div>
-                    <textarea class="form-control" name="" id="" cols="5" rows="5" placeholder="content.."></textarea>
+                <div class="blogInput">
+                    <h2 class="blogInput">Adding A New Blog</h2>
                 </div>
-                <button onclick="createText()" class="btn-primary btn">Add Blog</button>
-                <!-- Pressing the add blog, you would get an input box, and input -->
-                <!-- <button class="btn-danger btn">Remove</button> -->
+                <form onsubmit="return false">
+                    <div class="form-group">
+                        <div class="form-row mb-2">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="blog_title">
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="username">
+                            </div>
+                        </div>
+                        <textarea class="form-control" name="" id="" cols="5" rows="5" placeholder="content.."></textarea>
+                    </div>
+                    <button type="submit" onclick="createText()" class="btn-primary btn">Add Blog</button>
+                    <!-- Pressing the add blog, you would get an input box, and input -->
+                    <!-- <button class="btn-danger btn">Remove</button> -->
+                </form>
             </main>
         </div>
 
