@@ -18,7 +18,7 @@ label {
 
 main {
     border: solid 3px rgba(0,0,0,.25);
-    padding: 50px;
+    padding: 20px;
     margin: 50px;
     border-radius: 30px;
     background: rgba(255,255,255,.85);
@@ -96,7 +96,7 @@ ul {
     margin: 10px;
     max-height: 100px;
     text-align: left;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .blogCard_Bottom_Buttons {
@@ -126,4 +126,13 @@ p_footer {
 
 .footer {
     margin: 0 auto;
+}
+
+@media screen and (max-width:800px) {
+    .menu {
+        width: 100%;
+    }
+    .blogCard {
+        width: 90%;
+    }
 }
