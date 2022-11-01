@@ -1,15 +1,30 @@
 body {
     font-family: "Sriracha";
+    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .menu {
+    font-family: "Sriracha";
     margin: 0 auto;
     width: 60%  
 }
+
+#NewBlog_Error {
+    text-align: center;
+}
+label {
+    margin-bottom: 0 !important;
+}
+
 main {
     border: solid 3px rgba(0,0,0,.25);
     padding: 50px;
     margin: 50px;
     border-radius: 30px;
+    background: rgba(255,255,255,.85);
+}
+#error {
+    color: red;
 }
 
 .header {
@@ -41,7 +56,7 @@ ul {
 .blogCard {
     font-family: 'Sriracha', cursive;
     width: 60%;
-    margin: 5px auto;
+    margin: 20px auto;
     border: solid 2px rgba(0,0,0,.25);
     border-radius: 22px;
     max-height: 300px;
@@ -49,6 +64,7 @@ ul {
 .blogCard_Top {
     border-radius: 20px 20px 0 0;
     background: lightgray;
+    display: flex;
 }
 .blogCard_Top_Content {
     margin-top: 10px;
@@ -56,9 +72,6 @@ ul {
     flex-direction: column;
 }
 
-.blogCard_Top {
-    display: flex;
-}
 .blogCard_Top img {
     border-radius: 50%;
     margin: 10px;
@@ -73,6 +86,12 @@ ul {
     font-size: 10px;
     text-align: left;
 }
+
+.blogCard_Bottom {
+    background: white;
+    border-radius: 0 0 20px 20px;
+}
+
 .blogCard_Bottom p {
     margin: 10px;
     max-height: 100px;

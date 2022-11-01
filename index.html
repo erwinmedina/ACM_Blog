@@ -8,7 +8,7 @@
                         <a href="about_us.html" target="_self" id="about">About Us</a>
                     </li>
                     <li class="menu">
-                        <a href="Main.html" target="_self" id="menu">Home</a>
+                        <a href="index.html" target="_self" id="menu">Home</a>
                     </li>
                 </ul>
             </article>
@@ -23,56 +23,65 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-        <script>
+        <script defer src="./main.js"></script>
+
+        <!-- <script>
             function createText() {
                 var P = document.createElement("INPUT");
                 P.setAttribute("type", "text");
                 document.body.appendChild(P);
             }
-        </script>
+        </script> -->
     </head>
     <body>
         <div class="menu">
             <h1>Welcome to the Blog</h1>
             <main>
-                <h2>Adding A New Blog</h2>
+                <div id="NewBlog_Error">
+                    <h2>Write Your Story Here</h2>
+                </div>
                 <div class="form-group">
                     <div class="form-row mb-2">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="blog_title">
+                            <label for="exampleFormControlInput1">Blog Title</label>
+                            <input type="text" id="title" class="form-control" value= "" placeholder="">
                         </div>
                     </div>
                     <div class="form-row mb-2">
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="username">
+                            <label for="exampleFormControlInput1">Username</label>
+                            <input type="text" id="username" class="form-control" placeholder="">
                         </div>
                     </div>
-                    <textarea class="form-control" name="" id="" cols="5" rows="5" placeholder="content.."></textarea>
+                    <label for="exampleFormControlInput1">Content</label>
+                    <textarea class="form-control" id="content" name="" id="" cols="5" rows="5" placeholder="..."></textarea>
                 </div>
-                <button onclick="createText()" class="btn-primary btn">Add Blog</button>
-                <!-- Pressing the add blog, you would get an input box, and input -->
-                <!-- <button class="btn-danger btn">Remove</button> -->
+                <button id="publish" class="btn-primary btn">Publish</button>
             </main>
         </div>
 
-        <div class="blogCard">
-            <div class="blogCard_Top">
-                <img class="userImage" src="https://as2.ftcdn.net/v2/jpg/02/39/41/79/1000_F_239417990_6mtJfi4zPXoOR3JhtWNuQ2l9pQKbMLHJ.jpg" alt="">
-                <div class="blogCard_Top_Content">
-                    <h3>The Very First Blog - Example 1 </h3>
-                    <p class="username">Erwin Medina</p>
-                    <p class="timestamp">09/23/24 10:45am</p>
+        <div id="blogContainer">
+            <div class="blogCard">
+                <div class="blogCard_Top">
+                    <img class="userImage" src="https://as2.ftcdn.net/v2/jpg/02/39/41/79/1000_F_239417990_6mtJfi4zPXoOR3JhtWNuQ2l9pQKbMLHJ.jpg" alt="">
+                    <div class="blogCard_Top_Content">
+                        <h3>The Very First Blog - Example 1 </h3>
+                        <p class="username">Erwin Medina</p>
+                        <p class="timestamp">09/23/24 10:45am</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blogCard_Bottom">
-                <p>ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quam fugit ducimus, in voluptatibus accusamus accusantium vero culpa quis repellendus suscipit maiores quos at temporibus quae ea, nisi assumenda inventore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facilis magnam sint odio consequatur distinctio similique quisquam accusamus voluptates debitis, impedit commodi consequuntur eius fugiat! Libero velit cumque iusto quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt, aut, nobis unde accusantium optio repudiandae nisi assumenda voluptatem aperiam tempore autem natus dolore quidem? Ipsum quas ad repellat vitae.</p>
-                <div class="blogCard_Bottom_Buttons">
-                    <div class="btn btn-success btn-sm">Read</div>
-                    <div class="btn btn-primary btn-sm">Like</div>
-                    <div class="btn btn-danger btn-sm">Dislike</div>
+                <div class="blogCard_Bottom">
+                    <p>ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quam fugit ducimus, in voluptatibus accusamus accusantium vero culpa quis repellendus suscipit maiores quos at temporibus quae ea, nisi assumenda inventore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facilis magnam sint odio consequatur distinctio similique quisquam accusamus voluptates debitis, impedit commodi consequuntur eius fugiat! Libero velit cumque iusto quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt, aut, nobis unde accusantium optio repudiandae nisi assumenda voluptatem aperiam tempore autem natus dolore quidem? Ipsum quas ad repellat vitae.</p>
+                    <div class="blogCard_Bottom_Buttons">
+                        <div class="btn btn-success btn-sm">Read</div>
+                        <i class="fa-solid fa-heart"></i>
+                        <div class="btn btn-primary btn-sm"><i class="fa-solid fa-heart"></i>Like</div>
+                        <div class="btn btn-danger btn-sm">Dislike</div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <br></br>
     </body>
     <footer>
